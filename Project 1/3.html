@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working on creating NodeList programitically using JS</title>
+</head>
+<body style="background-color: aquamarine; color: black; font-size: large;">
+</body>
+<script>
+    const div = document.createElement('div');
+    div.setAttribute("id" , "generated_div");
+    div.setAttribute("class" ,"generated_class");
+    // console.log(div);
+    const addText = document.createTextNode("Div generated");
+    div.appendChild(addText);
+    console.log(div);
+    div.style.padding = '15px';
+    div.style.backgroundColor = 'Yellow';
+    div.style.padding = '20px';
+    div.style.width = '200px'
+    div.style.borderRadius = '50px'
+    div.style.display = 'flex';
+    div.style.alignContent = 'Center'
+    document.body.appendChild(div);
+</script>
+</html>
