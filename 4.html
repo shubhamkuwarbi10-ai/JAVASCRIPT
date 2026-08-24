@@ -11,13 +11,30 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
+    function addOptimalLang(langName){
         const li = document.createElement('li');
-        li.innerHTML = langName;
+        li.appendChild(document.createTextNode(langName));
         document.querySelector('.language').appendChild(li);
     }
-    addLanguage('python');
-    addLanguage('typeScript');
-    addLanguage('Hello I am shubham singh');
+    // function addLanguage(langName){
+    //     const li = document.createElement('li');
+    //     li.innerHTML = langName;
+    //     document.querySelector('.language').appendChild(li);
+    // }
+    addOptimalLang('Hello I am shubham singh');
+    addOptimalLang('python');
+    addOptimalLang('typeScript');
+
+    // Edit
+    const second_lang = document.querySelector("li:nth-child(2)");
+    // console.log(second_lang);
+    
+    const new_li = document.createElement('li');
+    new_li.textContent = "RUST";
+    second_lang.replaceWith(new_li);
+
+    // remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
 </script>
 </html>
