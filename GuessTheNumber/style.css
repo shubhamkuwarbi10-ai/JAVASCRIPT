@@ -10,6 +10,41 @@ body {
   background-color: #212121;
 }
 
+#navBar{
+    display: flex;
+    background-color : lightblue;
+    width: 430px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-left: 0px; */
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+#home{
+    padding-left: 10px;
+    padding-right: 20px;
+    color: black;
+    font-size: larger;
+    font-weight: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#youtube{
+    padding-right: 20px;
+    color: #000;
+    font-weight: 1000;
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 .lastResult {
   color: white;
   padding: 7px;
