@@ -91,7 +91,7 @@ function newGame(){
         prevGuess = []
         NumGuess = 1
         guessSlot.innerHTML = ''
-        remainig.innerHTML = `${guess}  |  `
+        remainig.innerHTML = `${11 - NumGuess}`
         userInput.removeAttribute('disabled')
 
         startOver.removeChild(p)
